@@ -148,7 +148,7 @@ typedef PyMethodDef HPyMethodDef;
 
 #define HPy_METH_CPY_VARARGS_KEYWORDS(NAME)                                         \
     static PyObject* NAME##_impl(PyObject *self, PyObject *args, PyObject *kwargs); \
-    static PyObject* NAME(PyObject *self, PyObject *args, PyObject *kwargs)         \
+    PyObject* NAME(PyObject *self, PyObject *args, PyObject *kwargs)         \
     {                                                                               \
         return NAME##_impl(self, args, kwargs);                                     \
     }
