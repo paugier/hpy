@@ -1,0 +1,302 @@
+typedef struct _HPyContext_s {
+    int ctx_version;
+    struct _HPy_s h_None;
+    struct _HPy_s h_True;
+    struct _HPy_s h_False;
+    struct _HPy_s h_ValueError;
+    struct _HPy_s h_TypeError;
+    void * ctx_Module_Create;
+    void * ctx_Dup;
+    void * ctx_Close;
+    void * ctx_Long_FromLong;
+    void * ctx_Long_FromLongLong;
+    void * ctx_Long_FromUnsignedLongLong;
+    void * ctx_Long_AsLong;
+    void * ctx_Float_FromDouble;
+    void * ctx_Number_Add;
+    void * ctx_Err_SetString;
+    void * ctx_Object_IsTrue;
+    void * ctx_Type_FromSpec;
+    void * ctx_GetAttr;
+    void * ctx_GetAttr_s;
+    void * ctx_HasAttr;
+    void * ctx_HasAttr_s;
+    void * ctx_SetAttr;
+    void * ctx_SetAttr_s;
+    void * ctx_GetItem;
+    void * ctx_GetItem_i;
+    void * ctx_GetItem_s;
+    void * ctx_SetItem;
+    void * ctx_SetItem_i;
+    void * ctx_SetItem_s;
+    void * ctx_Bytes_Check;
+    void * ctx_Bytes_Size;
+    void * ctx_Bytes_GET_SIZE;
+    void * ctx_Bytes_AsString;
+    void * ctx_Bytes_AS_STRING;
+    void * ctx_Unicode_FromString;
+    void * ctx_Unicode_Check;
+    void * ctx_Unicode_AsUTF8String;
+    void * ctx_Unicode_FromWideChar;
+    void * ctx_List_New;
+    void * ctx_List_Append;
+    void * ctx_Dict_New;
+    void * ctx_Dict_SetItem;
+    void * ctx_Dict_GetItem;
+    void * ctx_FromPyObject;
+    void * ctx_AsPyObject;
+    void * ctx_CallRealFunctionFromTrampoline;
+} _struct_HPyContext_s;
+
+
+
+
+
+
+
+@API.func("HPy HPyModule_Create(HPyContext ctx, HPyModuleDef *def)")
+def HPyModule_Create(space, ctx, def):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("HPy HPy_Dup(HPyContext ctx, HPy h)")
+def HPy_Dup(space, ctx, h):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("void HPy_Close(HPyContext ctx, HPy h)")
+def HPy_Close(space, ctx, h):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("HPy HPyLong_FromLong(HPyContext ctx, long value)")
+def HPyLong_FromLong(space, ctx, value):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("HPy HPyLong_FromLongLong(HPyContext ctx, long long v)")
+def HPyLong_FromLongLong(space, ctx, v):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("HPy HPyLong_FromUnsignedLongLong(HPyContext ctx, unsigned long long v)")
+def HPyLong_FromUnsignedLongLong(space, ctx, v):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("long HPyLong_AsLong(HPyContext ctx, HPy h)")
+def HPyLong_AsLong(space, ctx, h):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("HPy HPyFloat_FromDouble(HPyContext ctx, double v)")
+def HPyFloat_FromDouble(space, ctx, v):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("HPy HPyNumber_Add(HPyContext ctx, HPy h1, HPy h2)")
+def HPyNumber_Add(space, ctx, h1, h2):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("void HPyErr_SetString(HPyContext ctx, HPy h_type, const char *message)")
+def HPyErr_SetString(space, ctx, h_type, message):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("int HPyObject_IsTrue(HPyContext ctx, HPy h)")
+def HPyObject_IsTrue(space, ctx, h):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("HPy HPyType_FromSpec(HPyContext ctx, HPyType_Spec *spec)")
+def HPyType_FromSpec(space, ctx, spec):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("HPy HPy_GetAttr(HPyContext ctx, HPy obj, HPy name)")
+def HPy_GetAttr(space, ctx, obj, name):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("HPy HPy_GetAttr_s(HPyContext ctx, HPy obj, const char *name)")
+def HPy_GetAttr_s(space, ctx, obj, name):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("int HPy_HasAttr(HPyContext ctx, HPy obj, HPy name)")
+def HPy_HasAttr(space, ctx, obj, name):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("int HPy_HasAttr_s(HPyContext ctx, HPy obj, const char *name)")
+def HPy_HasAttr_s(space, ctx, obj, name):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("int HPy_SetAttr(HPyContext ctx, HPy obj, HPy name, HPy value)")
+def HPy_SetAttr(space, ctx, obj, name, value):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("int HPy_SetAttr_s(HPyContext ctx, HPy obj, const char *name, HPy value)")
+def HPy_SetAttr_s(space, ctx, obj, name, value):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("HPy HPy_GetItem(HPyContext ctx, HPy obj, HPy key)")
+def HPy_GetItem(space, ctx, obj, key):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("HPy HPy_GetItem_i(HPyContext ctx, HPy obj, HPy_ssize_t idx)")
+def HPy_GetItem_i(space, ctx, obj, idx):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("HPy HPy_GetItem_s(HPyContext ctx, HPy obj, const char *key)")
+def HPy_GetItem_s(space, ctx, obj, key):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("int HPy_SetItem(HPyContext ctx, HPy obj, HPy key, HPy value)")
+def HPy_SetItem(space, ctx, obj, key, value):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("int HPy_SetItem_i(HPyContext ctx, HPy obj, HPy_ssize_t idx, HPy value)")
+def HPy_SetItem_i(space, ctx, obj, idx, value):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("int HPy_SetItem_s(HPyContext ctx, HPy obj, const char *key, HPy value)")
+def HPy_SetItem_s(space, ctx, obj, key, value):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("int HPyBytes_Check(HPyContext ctx, HPy h)")
+def HPyBytes_Check(space, ctx, h):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("HPy_ssize_t HPyBytes_Size(HPyContext ctx, HPy h)")
+def HPyBytes_Size(space, ctx, h):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("HPy_ssize_t HPyBytes_GET_SIZE(HPyContext ctx, HPy h)")
+def HPyBytes_GET_SIZE(space, ctx, h):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("char *HPyBytes_AsString(HPyContext ctx, HPy h)")
+def HPyBytes_AsString(space, ctx, h):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("char *HPyBytes_AS_STRING(HPyContext ctx, HPy h)")
+def HPyBytes_AS_STRING(space, ctx, h):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("HPy HPyUnicode_FromString(HPyContext ctx, const char *utf8)")
+def HPyUnicode_FromString(space, ctx, utf8):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("int HPyUnicode_Check(HPyContext ctx, HPy h)")
+def HPyUnicode_Check(space, ctx, h):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("HPy HPyUnicode_AsUTF8String(HPyContext ctx, HPy h)")
+def HPyUnicode_AsUTF8String(space, ctx, h):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("HPy HPyUnicode_FromWideChar(HPyContext ctx, const wchar_t *w, HPy_ssize_t size)")
+def HPyUnicode_FromWideChar(space, ctx, w, size):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("HPy HPyList_New(HPyContext ctx, HPy_ssize_t len)")
+def HPyList_New(space, ctx, len):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("int HPyList_Append(HPyContext ctx, HPy h_list, HPy h_item)")
+def HPyList_Append(space, ctx, h_list, h_item):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("HPy HPyDict_New(HPyContext ctx)")
+def HPyDict_New(space, ctx):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("int HPyDict_SetItem(HPyContext ctx, HPy h_dict, HPy h_key, HPy h_val)")
+def HPyDict_SetItem(space, ctx, h_dict, h_key, h_val):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("HPy HPyDict_GetItem(HPyContext ctx, HPy h_dict, HPy h_key)")
+def HPyDict_GetItem(space, ctx, h_dict, h_key):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("HPy HPy_FromPyObject(HPyContext ctx, struct _object *obj)")
+def HPy_FromPyObject(space, ctx, obj):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("struct _object *HPy_AsPyObject(HPyContext ctx, HPy h)")
+def HPy_AsPyObject(space, ctx, h):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+
+@API.func("struct _object *_HPy_CallRealFunctionFromTrampoline(HPyContext ctx, struct _object *self, struct _object *args, struct _object *kw, void *func, int ml_flags)")
+def _HPy_CallRealFunctionFromTrampoline(space, ctx, self, args, kw, func, ml_flags):
+    from rpython.rlib.nonconst import NonConstant # for the annotator
+    if NonConstant(False): return 0
+    raise NotImplementedError
+

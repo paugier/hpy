@@ -2,6 +2,7 @@
 typedef int HPy;
 typedef int HPyContext;
 typedef int HPyModuleDef;
+typedef int HPyType_Spec;
 typedef int HPyCFunction;
 typedef int HPy_ssize_t;
 typedef int wchar_t;
@@ -31,6 +32,7 @@ void HPyErr_SetString(HPyContext ctx, HPy h_type, const char *message);
 
 /* object.h */
 int HPyObject_IsTrue(HPyContext ctx, HPy h);
+HPy HPyType_FromSpec(HPyContext ctx, HPyType_Spec* spec);
 
 HPy HPy_GetAttr(HPyContext ctx, HPy obj, HPy name);
 HPy HPy_GetAttr_s(HPyContext ctx, HPy obj, const char *name);
